@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KAVA — демонстраційний сайт затишної кав'ярні." />
+  <title>KAVA — Coffee & Moments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+  <div class="demo">Демонстраційний проєкт · назва, меню та контакти вигадані</div>
+  <header class="header" id="top">
+    <a class="logo" href="#top">KAVA<span>.</span></a>
+    <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navigation">☰</button>
+    <nav id="navigation" class="nav" aria-label="Основна навігація">
+      <a href="#about">Про нас</a><a href="#menu">Меню</a><a href="#space">Атмосфера</a><a href="#contact">Контакти</a>
+    </nav>
+    <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Увімкнути світлу тему" title="Змінити тему">☀ Світла тема</button><a class="header-cta" href="#menu">Переглянути меню ↗</a></div>
+  </header>
+  <main>
+    <section class="hero hero-scene"><div class="hero-backdrop" role="img" aria-label="Люди працюють за ноутбуками у затишному просторі"></div><div class="hero-inner wrap">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="dot"></span> МІСЦЕ ДЛЯ ТВОЇХ МОМЕНТІВ</span>
+        <h1>Кава, в яку<br><em>закохуєшся</em><br>з першого ковтка.</h1>
+        <p>Трохи сповільнись. Насолодись ароматною кавою, свіжими десертами та моментом, який належить тільки тобі.</p>
+        <div class="hero-actions"><a class="btn primary" href="#menu">Наше меню <span>↗</span></a><a class="text-link" href="#about">Дізнатись більше <span>→</span></a></div>
+        <div class="hero-note"><span class="line"></span> Затишок у кожній чашці</div>
+      </div>
+      <div class="hero-image reveal"><div class="hero-glass"><span>01 / KAVA SPACE</span><strong>Твій простір для ідей.</strong><p>Кава, ноутбук і час для себе.</p></div></div>
+    </div></section>
+    <section class="stats wrap reveal"><div><strong>100%</strong><span>любов до кави</span></div><div><strong>01</strong><span>чашка — тисяча емоцій</span></div><div><strong>∞</strong><span>приводів завітати</span></div></section>
+    <section class="about wrap section" id="about"><div class="about-image reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=85" alt="Чашки кави та зерна"/></div><div class="about-copy reveal"><span class="eyebrow">НАША ФІЛОСОФІЯ</span><h2>Більше, ніж<br><em>просто кава.</em></h2><p>Ми віримо, що найкращі речі в житті — прості. Улюблена кава зранку, тепла розмова з другом, аромат свіжої випічки.</p><p>KAVA — це простір, де хочеться залишитися ще на одну чашку.</p><a class="text-link" href="#space">Відчути атмосферу <span>→</span></a></div></section>
+    <section class="menu-section section" id="menu"><div class="wrap"><div class="section-heading reveal"><div><span class="eyebrow">СТВОРЕНО З ЛЮБОВ'Ю</span><h2>Твоє нове<br><em>улюблене меню.</em></h2></div><p>Від класики до маленьких солодких радощів. Обирай те, що сьогодні до душі.</p></div><div class="filters" role="group" aria-label="Категорії меню"><button class="filter active" data-filter="all" aria-pressed="true">Усе меню</button><button class="filter" data-filter="coffee" aria-pressed="false">Кава</button><button class="filter" data-filter="dessert" aria-pressed="false">Десерти</button></div><div class="products">
+      <article class="product reveal" data-category="coffee"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85" alt="Лате"/><div class="product-info"><div><h3>Карамельне лате</h3><p>Ніжне молоко, еспресо, карамель</p></div><strong>95 ₴</strong></div></article>
+      <article class="product reveal" data-category="coffee"><img loading="lazy" src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=85" alt="Капучино"/><div class="product-info"><div><h3>Капучино</h3><p>Насичений еспресо, оксамитова пінка</p></div><strong>75 ₴</strong></div></article>
+      <article class="product reveal" data-category="dessert"><img loading="lazy" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85" alt="Десерт"/><div class="product-info"><div><h3>Вершковий десерт</h3><p>Легкий та ніжний солодкий момент</p></div><strong>110 ₴</strong></div></article>
+      <article class="product reveal" data-category="dessert"><img loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=85" alt="Свіжа випічка"/><div class="product-info"><div><h3>Свіжа випічка</h3><p>Ароматна, щойно з печі</p></div><strong>65 ₴</strong></div></article>
+    </div><p class="menu-note">* Меню та ціни наведені лише для демонстрації дизайну.</p></div></section>
+    <section class="space wrap section" id="space"><div class="space-copy reveal"><span class="eyebrow">ЗАТИШОК У ДЕТАЛЯХ</span><h2>Тут добре<br><em>бути собою.</em></h2><p>Заходь на коротку перерву або залишайся на довгу розмову. Ми подбаємо про атмосферу.</p><a class="btn primary" href="#contact">Завітати до нас <span>↗</span></a></div><div class="space-photo reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85" alt="Світлий інтер'єр кав'ярні"/></div></section>
+    <section class="contact section" id="contact"><div class="wrap contact-inner reveal"><span class="eyebrow">ДО ЗУСТРІЧІ</span><h2>Твоя кава<br><em>вже чекає.</em></h2><p>Це демонстраційний сайт. Для реального закладу тут будуть адреса, години роботи, телефон та посилання на соцмережі.</p><div class="contact-details"><div><span>АДРЕСА</span><strong>Додається для клієнта</strong></div><div><span>ГОДИНИ РОБОТИ</span><strong>Додаються для клієнта</strong></div></div><a class="btn primary" href="mailto:hello@example.com?subject=KAVA%20Demo">Приклад кнопки зв'язку <span>↗</span></a></div></section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="#top">KAVA<span>.</span></a><span>© <span id="year"></span> KAVA. Демонстраційний дизайн.</span><a href="#top">Нагору ↑</a></footer>
+</body>
+</html>
